@@ -1,0 +1,27 @@
+{
+    "name": "cb-chaos-ext",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "thmo_",
+    "license": "GPLv3",
+    "devDependencies": {
+        "@types/chrome": "0.0.81",
+        "@types/react": "^16.7.8",
+        "@types/react-dom": "^16.0.11",
+        "css-loader": "^2.1.0",
+        "style-loader": "^0.23.1",
+        "ts-loader": "^5.3.1",
+        "typescript": "^3.1.6",
+        "webpack": "^4.26.1",
+        "webpack-cli": "^3.1.2"
+    },
+    "dependencies": {
+        "react": "^16.6.3",
+        "react-dom": "^16.6.3"
+    }
+}
