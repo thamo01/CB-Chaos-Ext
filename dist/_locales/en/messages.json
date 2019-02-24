@@ -1,0 +1,29 @@
+{
+    "extName": {
+        "message": "CB Chaos Extension",
+        "description": "Name of the Chrome Extension"
+    },
+    "hello": {
+        "message": "Hello, $USER$",
+        "description": "Greet the user",
+        "placeholders": {
+            "user": {
+                "content": "$1",
+                "example": "thmo_"
+            }
+        }
+    },
+    "bye": {
+        "message": "Goodbye, $USER$. Come back to $MY_APP$ soon!",
+        "description": "Say goodbye to the user",
+        "placeholders": {
+            "my_app": {
+                "content": "Chaos"
+            },
+            "user": {
+                "content": "$1",
+                "example": "thmo_"
+            }
+        }
+    }
+}

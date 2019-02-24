@@ -10,6 +10,10 @@
         "128": "icons/icon128.png"
     },
     "browser_action": {
+        "matches": [
+            "https://*.chaturbate.com/*",
+            "http://*.chaturbate.com/*"
+        ],
         "default_title": "CB Chaos Ext",
         "default_popup": "popup.html"
     },
@@ -21,17 +25,20 @@
         "persistent": true
     },
     "permissions": [
-        "https://*.chaturbate.*",
-        "http://*.chaturbate.*"
+        "storage",
+        "tabs",
+        "idle",
+        "http://localhost/*",
+        "http://127.0.0.1/*"
     ],
-    "content_security_policy": "default-src 'self';",
+    "content_security_policy": "script-src 'self' 'unsafe-eval' https://ssl.google-analytics.com; object-src 'self'",
     "content_scripts": [{
         "matches": [
-            "https://*.chaturbate.*",
-            "http://*.chaturbate.*"
+            "*://*.chaturbate.com/b/*"
         ],
         "js": [
             "js/content.js"
-        ]
+        ],
+        "run_at": "document_end"
     }]
 }
